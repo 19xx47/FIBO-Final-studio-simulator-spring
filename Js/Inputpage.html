@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./Inputpage.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600&display=swap" />
+	<script src="reset.js"></script>
+  	
+  	
+  	
+</head>
+<body>
+<<<<<<< HEAD
+    <div class="macbook-pro-14-2">
+        <img class="macbook-pro-14-2-child" alt="" src="./images/rectangle-9.png">
+        <div class="macbook-pro-14-2-item"></div>
+        <img class="macbook-pro-14-2-inner" alt="" src="./images/rectangle-1.png">
+        <div class="rectangle-div"></div>
+        <div class="rectangle-parent" id="groupContainer">
+            <div class="group-child"></div>
+            <div class="eject" id="submitBtn">Submit</div>
+        </div>
+        <div class="div">117</div>
+        <div class="div1">95.26</div>
+        <div class="group-x">
+            <div class="mm">mm</div>
+            <div class="z">z :</div>
+            <div class="group-x-child"></div>
+        </div>
+        <div class="group-x1">
+            <div class="mm1">mm</div>
+            <div class="x">x :</div>
+            <div class="group-x-child"></div>
+        </div>
+        <div class="vector-parent">
+            <img class="group-item" alt="" src="./images/ellipse-7.png">
+            <div class="div3">1</div>
+        </div>
+        <div class="lets-see-demo">Let’s see demo</div>
+        <div class="div4">1</div>
+        <div class="div5">*</div>
+        <div class="macbook-pro-14-2-child1"></div>
+        <div class="group-x2">
+            <div class="mm3">mm</div>
+            <div class="x">x : <span class="coordinate-of-targetx" contenteditable="true"></span></div>
+            <div class="group-x-child"></div>
+        </div>
+        <div class="group-y">
+            <div class="mm3">mm</div>
+            <div class="y">y : <span class="coordinate-of-targety" contenteditable="true"></span></div>
+            <div class="group-y-child"></div>
+        </div>
+        <div class="group-z">
+            <div class="mm3">mm</div>
+            <div class="z">z : <span class="coordinate-of-targetz" contenteditable="true"></span></div>
+            <div class="group-z-child"></div>
+        </div>
+        <img class="macbook-pro-14-2-child2" alt="" src="./images/rectangle-3.png">
+        <div class="please-fill-in">*please fill in all required fields</div>
+        <div class="position-of-machine">Position of Machine :</div>
+        <div class="rectangle-group" id="groupContainer2">
+            <div class="group-inner"></div>
+            <div class="restart">Restart</div>
+        </div>
+        <div class="rectangle-container" id="groupContainer3">
+            <div class="group-child1"></div>
+            <div class="Trajectory">Trajectory</div>
+        </div>
+        <div class="group-div" id="groupContainer4">
+            <div class="group-child2"></div>
+            <div class="calculate">Calculate</div>
+        </div>
+        <div class="group-x3">
+            <div class="mm">mm</div>
+            <div class="z">z : <span class="coordinate-of-target3" contenteditable="true"></span></div>
+            <span class="group-x-child"></span>
+        </div>
+        <div class="div7">*</div>
+        <div class="group-x4">
+            <div class="mm">mm</div>
+            <div class="x">x : <span class="coordinate-of-target2" contenteditable="true"></span></div>
+            <div class="group-x-child"></div>
+        </div>
+        <div class="target-in-z">Target in x and z axis :</div>
+        <img class="polygon-icon" alt="" src="./images/polygon-1.png">
+        <div class="ellipse-div"></div>
+        <div class="macbook-pro-14-2-child3"></div>
+        <div class="macbook-pro-14-2-child4"></div>
+        <div class="div8">2</div>
+        <div class="div9">3</div>
+        <div class="div10">1</div>
+        <img class="ellipse-icon" alt="" src="./images/ellipse-8.png">
+        <div class="macbook-pro-14-2-child5"></div>
+        <img class="image-2-icon" alt="" src="./images/image-2.png">
+    </div>
+    
+    <script>
+        var groupContainer = document.getElementById("groupContainer");
+    		if(groupContainer) {
+      			groupContainer.addEventListener("click", function (e) {
+					
+						window.location.href = "./output.html";
+	
+        				// Add your code here
+      			});
+    		}
+
+            var groupContainer2 = document.getElementById("groupContainer2");
+				if (groupContainer2) {
+					groupContainer2.addEventListener("click", function (e) {
+						// Clear the content of the coordinate-of-targetx span
+
+						// Remove existing spans except for the x: span
+						var spansToRemove = document.querySelectorAll('.group-x4 span:not(.x), .group-x3 span, .group-x2 span, group-y span, group-z span');
+						spansToRemove.forEach(function (span) {
+							span.innerText = "";
+						});
+						    // Create new spans
+						var parentElement = document.querySelector(".group-x4");
+						var newElement = document.createElement("span");
+						newElement.classList.add("coordinate-of-target2"); 
+						newElement.contentEditable = true; 
+						parentElement.appendChild(newElement);
+
+						var parentElementy = document.querySelector(".group-x3");
+						var newElementy = document.createElement("span");
+						newElementy.classList.add("coordinate-of-target3"); 
+						newElementy.contentEditable = true; 
+						parentElementy.appendChild(newElementy);
+
+
+
+						var parentElementx_pos = document.querySelector(".group-x2");
+						var newElementx_pos = document.createElement("span");
+						newElementx_pos.classList.add("coordinate-of-targetx");
+						newElementx_pos.contentEditable = true;
+						parentElementx_pos.appendChild(newElementx_pos);
+
+						// var parentElementy_pos = document.querySelector(".group-y");
+						// var newElementy_pos = document.createElement("span");
+						// newElementy_pos.classList.add("coordinate-of-targety");
+						// newElementy_pos.contentEditable = true;
+						// parentElementy_pos.appendChild(newElementy_pos);
+
+						// var parentElementz_pos = document.querySelector(".group-z");
+						// var newElementz_pos = document.createElement("span");
+						// newElementz_pos.classList.add("coordinate-of-targetz");
+						// newElementz_pos.contentEditable = true;
+						// parentElementz_pos.appendChild(newElementz_pos);
+
+						// Create new spans
+						resetInputFields();
+						// var coordinateXElement = document.querySelector(".group-x2");
+						// if (coordinateXElement) {
+						// 	coordinateXElement.innerText = "";
+						// }
+					});
+				}
+			document.querySelector('.macbook-pro-14-2-child3').addEventListener('click', function() {
+			document.querySelector('.div').textContent = '820';
+			document.querySelector('.div1').textContent = '-120';
+			});
+
+			document.querySelector('.macbook-pro-14-2-child4').addEventListener('click', function() {
+			document.querySelector('.div').textContent = '960';
+			document.querySelector('.div1').textContent = '45';
+			});
+
+			document.querySelector('.ellipse-div').addEventListener('click', function() {
+			document.querySelector('.div').textCotargetyntent = '820';
+			document.querySelector('.div1').textContent = '75';
+			});
+			document.getElementById('submitBtn').addEventListener('click', function() {
+			window.location.href = 'output.html';
+			});
+
+        var groupContainer3 = document.getElementById("groupContainer3");
+        if (groupContainer3) {
+            groupContainer3.addEventListener("click", function (e) {
+                window.location.href = "./trajection.html";
+	
+            });
+        }
+        var groupContainer4 = document.getElementById("groupContainer4");
+        if (groupContainer4) {
+            groupContainer4.addEventListener("click", function (e) {
+                // Get input values
+                const targetX = document.querySelector('.coordinate-of-target2').innerText.trim();
+                const targetZ = document.querySelector('.coordinate-of-target3').innerText.trim();
+                const posX = document.querySelector('.coordinate-of-targetx').innerText.trim();
+                const posY = document.querySelector('.coordinate-of-targety').innerText.trim();
+                const posZ = document.querySelector('.coordinate-of-targetz').innerText.trim();
+                globalThis.angle = 0;
+                globalThis.velocity = 0;
+            
+
+                // Call the async function to fetch data
+                fetchData(targetX, targetZ, posX, posY, posZ, angle, velocity);
+                // fetchData_docs(targetX, targetZ, posX, posY, posZ);
+            });
+        }
+        async function fetchData_docs(targetX, targetZ, posX, posY, posZ) {
+
+            try {
+                data = {
+                    targetX: targetX,
+                    targetZ: targetZ,
+                    posX: posX,
+                    posY: posY,
+                    posZ: posZ,
+                    angle: angle,
+                    velocity: velocity
+                };
+                // Fetch angle and velocity from FastAPI
+                const googleResponse = await fetch('https://script.google.com/macros/s/AKfycbwd4jtyCLPXNrqrF60leuUMzhovXlpPbY4-T7-jFDqj2LrNIyLVmsAXOWx1e27uCGWTkw/exec', { // Replace with your Google Apps Script Web App URL
+                    
+                    mode: 'no-cors',
+                    credentials: 'include',
+
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (!googleResponse.ok) {
+                    throw new Error(`Error fetching angle and velocity: ${googleResponse.statusText}`);
+                };
+            }
+                
+
+                // Send data to Google Apps Script Web App
+                
+            catch (error) {
+                console.error('Failed to save data:', error);
+            }
+        }
+
+        async function fetchData(targetX, targetZ, posX, posY, posZ, angle, velocity) {
+
+            try {
+                // Fetch angle and velocity from FastAPI
+                const response = await fetch('http://localhost:8000/data', { // Replace with your FastAPI URL
+                    origin: 'http://localhost:8000',
+                    mode: 'cors',
+                    credentials: 'include',
+                    
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ targetX: parseFloat(targetX), targetZ: parseFloat(targetZ), posX: parseFloat(posX), posY: parseFloat(posY), posZ: parseFloat(posZ), angle: parseFloat(angle), velocity: parseFloat(velocity)})
+
+                    
+                });
+                console.log('fetching data');
+				console.log(response);
+                if (!response.ok) {
+                    throw new Error(`Error fetching angle and velocity: ${response.statusText}`);
+                }
+
+                // const result = await response.json();
+                // const angle = result.optimal_angle;
+                // const velocity = result.fixed_velocity;
+
+                // Construct data object including angle and velocity
+                // const data = {
+                //     targetX: targetX,
+                //     targetZ: targetZ,
+                //     posX: posX,
+                //     posY: posY,
+                //     posZ: posZ,
+                //     angle: angle,
+                //     velocity: velocity
+                // };
+                
+
+                // Send data to Google Apps Script Web App
+                // const googleResponse = await fetch('https://script.google.com/macros/s/AKfycbwd4jtyCLPXNrqrF60leuUMzhovXlpPbY4-T7-jFDqj2LrNIyLVmsAXOWx1e27uCGWTkw/exec', { // Replace with your Google Apps Script Web App URL
+                //     mode: 'no-cors',
+                //     credentials: 'include',
+                //     method: 'POST',
+                //     headers: {
+                //         'Content-Type': 'application/json'
+                //     },
+                //     body: JSON.stringify(data)
+                // });
+
+                // if (!googleResponse.ok) {
+                //     throw new Error(`Error fetching angle and velocity: ${googleResponse.statusText}`);
+                // };
+                
+            } catch (error) {
+                console.error('Failed to save data:', error);
+            }
+        }
+    </script>
+</body>
+</html>
+=======
+  	
+  	<div class="macbook-pro-14-2">
+    		<img class="macbook-pro-14-2-child" alt="" src="./images/rectangle-9.png">
+    		
+    		<div class="macbook-pro-14-2-item">
+    		</div>
+    		<img class="macbook-pro-14-2-inner" alt="" src="./images/rectangle-1.png">
+    		
+    		<div class="rectangle-div">
+    		</div>
+    		
+    		
+    		<div class="rectangle-parent" id="groupContainer">
+      			<div class="group-child">
+      			</div>
+      			<div class="eject" id="submitBtn">Submit</div>
+    		</div>
+    		<div class="div">117</div>
+    		<div class="div1">95.26</div>
+    		<div class="group-x">
+      			<div class="mm">mm</div>
+      			<div class="z">z :        
+				</div>
+      			<div class="group-x-child">
+      			</div>
+    		</div>
+    		<div class="group-x1">
+      			<div class="mm1">mm</div>
+      			<div class="x">x :        
+				</div>
+
+      			<div class="group-x-child">
+      			</div>
+    		</div>
+    		<div class="vector-parent">
+      			<img class="group-item" alt="" src="./images/ellipse-7.png">
+      			
+      			<div class="div3">1</div>
+    		</div>
+    		<div class="lets-see-demo">Let’s see demo</div>
+    		<div class="div4">1</div>
+    		<div class="div5">*</div>
+    		<div class="macbook-pro-14-2-child1">
+    		</div>
+    	
+    		
+    		<div class="group-x2">
+      			<div class="mm3">mm</div>
+      			<div class="x">x : 
+					<span class="coordinate-of-targetx" contenteditable="true"> </span>
+      			</div>
+      			<div class="group-x-child">
+			
+					
+      			</div>
+    		</div>
+			<div class="group-y">
+				<div class="mm3">mm</div>
+				<div class="y">y :       
+				  <span class="coordinate-of-targety" contenteditable="true"> </span>
+			  </div>
+				<div class="group-y-child">
+
+				</div>
+				
+		  </div>
+		  <div class="group-z">
+				<div class="mm3">mm</div>
+				<div class="z">z :       
+				  <span class="coordinate-of-targetz" contenteditable="true"> </span>
+			  </div>
+			  <div class="group-z-child"></div>
+
+			</div>
+
+
+		
+		
+		  
+			<img class="macbook-pro-14-2-child2" alt="" src="./images/rectangle-3.png">
+    		<div class="please-fill-in">*please fill in all required fields</div>
+    		<div class="position-of-machine">Position of Machine : </div>
+    		<div class="rectangle-group" id="groupContainer2">
+      			<div class="group-inner">
+      			</div>
+      			<div class="restart">Restart</div>
+    		</div>
+    		<div class="rectangle-container" id="groupContainer3">
+      			<div class="group-child1">
+      			</div>
+      			<div class="Trajectory">Trajectory</div>
+    		</div>
+    		<div class="group-div" id="groupContainer4">
+      			<div class="group-child2">
+      			</div>
+      			<div class="calculate">Calculate</div>
+    		</div>
+    		
+    		<div class="group-x3">
+				<div class="mm">mm</div>
+				<div class="z">z :
+					<span class="coordinate-of-target3" contenteditable="true"> </span>
+		
+				</div>
+				<span class="group-x-child"></span>
+			</div>
+			
+			<div class="div7">*</div>
+			
+			<div class="group-x4">
+				<div class="mm">mm</div>
+				<div class="x">x :
+					<span class="coordinate-of-target2" contenteditable="true"> </span>
+				</div>
+				<div class="group-x-child">
+				</div>
+			</div>
+			
+    		<div class="target-in-z">Target in x and z axis :</div>
+    		<img class="polygon-icon" alt="" src="./images/polygon-1.png">
+    		
+    		<div class="ellipse-div">
+    		</div>
+    		<div class="macbook-pro-14-2-child3">
+    		</div>
+    		<div class="macbook-pro-14-2-child4">
+    		</div>
+    		<div class="div8">2</div>
+    		<div class="div9">3</div>
+    		<div class="div10">1</div>
+    		<img class="ellipse-icon" alt="" src="./images/ellipse-8.png">
+    		
+    		<div class="macbook-pro-14-2-child5">
+    		</div>
+    		<img class="image-2-icon" alt="" src="./images/image-2.png">
+    		
+  	</div>
+  	
+  	
+  	
+  	
+  	<script>
+
+			// Select the input field
+			// Select the input field
+			
+			var parentElement = document.querySelector(".group-x4");
+			var newElement = document.createElement("span");
+			newElement.classList.add("coordinate-of-target2"); 
+			newElement.contentEditable = true; 
+
+			parentElement.appendChild(newElement);
+
+			var parentElementy = document.querySelector(".group-x3");
+			var newElementy = document.createElement("span");
+			newElementy.classList.add("coordinate-of-target3"); 
+			newElementy.contentEditable = true; 
+
+			parentElementy.appendChild(newElementy);
+
+			var parentElementx_pos = document.querySelector(".group-x2");
+			var newElementx_pos = document.createElement("span");
+			newElementx_pos.classList.add("coordinate-of-targetx");
+			newElementx_pos.contentEditable = true;
+
+			parentElementx_pos.appendChild(newElementx_pos);
+
+		
+
+			var parentElementy_pos = document.querySelector(".group-y");
+			var newElementy_pos = document.createElement("span");
+			newElementy_pos.classList.add("coordinate-of-targety");
+			newElementy_pos.contentEditable = true;
+
+			parentElementy_pos.appendChild(newElementy_pos);
+
+
+
+			var parentElementz_pos = document.querySelector(".group-z");
+			var newElementz_pos = document.createElement("span");
+			newElementz_pos.classList.add(".coordinate-of-targetz");
+			newElementz_pos.contentEditable = true;
+
+			parentElementz_pos.appendChild(newElementz_pos);
+
+
+			
+    		var groupContainer = document.getElementById("groupContainer");
+    		if(groupContainer) {
+      			groupContainer.addEventListener("click", function (e) {
+					
+						window.location.href = "./output.html";
+	
+        				// Add your code here
+      			});
+    		}
+			var groupContainer2 = document.getElementById("groupContainer2");
+				if (groupContainer2) {
+					groupContainer2.addEventListener("click", function (e) {
+						// Clear the content of the coordinate-of-targetx span
+
+						// Remove existing spans except for the x: span
+						var spansToRemove = document.querySelectorAll('.group-x4 span:not(.x), .group-x3 span, .group-x span, .group-x2 span, group-y span');
+						spansToRemove.forEach(function (span) {
+							span.innerText = "";
+						});
+						    // Create new spans
+						var parentElement = document.querySelector(".group-x4");
+						var newElement = document.createElement("span");
+						newElement.classList.add("coordinate-of-target2"); 
+						newElement.contentEditable = true; 
+						parentElement.appendChild(newElement);
+
+						var parentElementy = document.querySelector(".group-x3");
+						var newElementy = document.createElement("span");
+						newElementy.classList.add("coordinate-of-target3"); 
+						newElementy.contentEditable = true; 
+						parentElementy.appendChild(newElementy);
+
+
+
+						// var parentElementx_pos = document.querySelector(".x");
+						// var newElementx_pos = document.createElement("span");
+						// newElementx_pos.classList.add("coordinate-of-targetx");
+						// newElementx_pos.contentEditable = true;
+						// parentElementx_pos.appendChild(newElementx_pos);
+
+						var parentElementy_pos = document.querySelector(".group-y");
+						var newElementy_pos = document.createElement("span");
+						newElementy_pos.classList.add("coordinate-of-targety");
+						newElementy_pos.contentEditable = true;
+						parentElementy_pos.appendChild(newElementy_pos);
+
+						var parentElementz_pos = document.querySelector(".group-z");
+						var parentElementz_pos = document.createElement("span");
+						newElementz_pos.classList.add("coordinate-of-targetz");
+						newElementz_pos.contentEditable = true;
+						parentElementz_pos.appendChild(newElementz_pos);
+
+						// Create new spans
+						resetInputFields();
+						// var coordinateXElement = document.querySelector(".group-x2");
+						// if (coordinateXElement) {
+						// 	coordinateXElement.innerText = "";
+						// }
+					});
+				}
+			document.querySelector('.macbook-pro-14-2-child3').addEventListener('click', function() {
+			document.querySelector('.div').textContent = '820';
+			document.querySelector('.div1').textContent = '-120';
+			});
+
+			document.querySelector('.macbook-pro-14-2-child4').addEventListener('click', function() {
+			document.querySelector('.div').textContent = '960';
+			document.querySelector('.div1').textContent = '45';
+			});
+
+			document.querySelector('.ellipse-div').addEventListener('click', function() {
+			document.querySelector('.div').textCotargetyntent = '820';
+			document.querySelector('.div1').textContent = '75';
+			});
+			document.getElementById('submitBtn').addEventListener('click', function() {
+			window.location.href = 'output.html';
+			});
+						
+
+												
+    		
+    		var groupContainer3 = document.getElementById("groupContainer3");
+    		if(groupContainer3) {
+      			groupContainer3.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var groupContainer4 = document.getElementById("groupContainer4");
+    		if(groupContainer4) {
+      			groupContainer4.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}</script></body>
+</html>
+>>>>>>> parent of 792db4a (api error)

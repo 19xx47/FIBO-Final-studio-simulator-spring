@@ -1,92 +1,247 @@
-.messageimage-1713698813764-cop-icon {
-    width: 100%;
-    position: relative;
-    left: -297px;
-    border-radius: 2px;
-    max-width: 100%;
-    overflow: hidden;
-    height: 995px;
-    object-fit: contain;
-    opacity: 0.9;
-}
-
-
-
+/* Base styles */
 .macbook-pro-14-1-child {
     position: absolute;
-    top: -94px;
-    left: 584px;
-    border-radius: 50%;
-    background: linear-gradient(233.47deg, rgba(255, 240, 202, 0.5), rgba(255, 229, 230, 0.5));
-    width: 1210px;
-    height: 1196px;
+    top: 866px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 12px 54.9px rgba(0, 0, 0, 0.25);
+    border-radius: 153px;
+    background: radial-gradient(50% 50% at 50% 50%, #bd4b4b, #ee6983);
+    width: 818px;
+    height: 306px;
 }
+
 .lets-see-how {
     position: absolute;
-    top: 695px;
-    left: 656px;
+    top: 777px;
+    left: 50%;
+    transform: translateX(-50%);
     letter-spacing: 0.11em;
     font-weight: 500;
     display: inline-block;
-    width: 587px;
+    width: 90%;
+    max-width: 587px;
     height: 53px;
+    text-align: center;
 }
-.squash-machine {
-    margin: 0;
+
+.macbook-pro-14-1-item {
+    position: absolute;
+    top: 158px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 104px;
+    width: 90%;
+    max-width: 959px;
+    height: 261px;
 }
+
 .squash-machine-simulator-container {
     position: absolute;
-    top: 234px;
-    left: 684px;
-    font-size: 96px;
-    letter-spacing: 0.06em;
-    font-weight: 600;
-    background: linear-gradient(90deg, #a60f7c, #d4044f);
+    top: 158px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5vw;
+    max-width: 1149px;
+    letter-spacing: 0.01em;
+    display: flex;
+    font-family: Quicksand;
+    background: linear-gradient(180deg, #bd4b4b, #850e35);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: left;
-    display: inline-block;
-    width: 1149px;
-    height: 223px;
+    align-items: center;
+    width: 90%;
+    max-width: 1149px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
 }
+
 .group-child {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     border-radius: 20px;
-    width: 307px;
-    height: 118px;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
+
 .start {
     position: absolute;
-    top: 4px;
-    left: 39px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     letter-spacing: 0.16em;
-    display: inline-block;
-    width: 228px;
-    height: 110px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
+
 .vector-parent {
-    position: absolute;
-    top: 517px;
-    left: 684px;
-    width: 307px;
-    height: 118px;
+    width: 90%;
+    max-width: 429.3px;
+    height: auto;
     mix-blend-mode: normal;
     cursor: pointer;
-    font-size: 65px;
+    font-size: 4vw;
     color: #ffe5e6;
-    font-family: Jaldi;
+    padding: 20px;
+    text-align: center;
+    position: relative;
 }
+
+.vector-wrapper {
+    position: absolute;
+    top: 492px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+}
+
+.macbook-pro-14-1-inner {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+}
+
+.polygon-icon {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+.ellipse-div {
+    position: absolute;
+    top: -225px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: linear-gradient(180deg, #bd4b4b, #ee6983);
+    width: 313px;
+    height: 313px;
+}
+
+.macbook-pro-14-1-child1 {
+    position: absolute;
+    top: 39px;
+    left: 743px;
+    border-radius: 50%;
+    background-color: #fff9e5;
+    width: 28px;
+    height: 28px;
+}
+
+.rectangle-div {
+    position: absolute;
+    top: 951px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    background: linear-gradient(0deg, #bba1a1, #cbbebe);
+    width: 90%;
+    max-width: 1170px;
+    height: 50px;
+}
+
 .macbook-pro-14-1 {
     width: 100%;
     position: relative;
-    background: linear-gradient(180deg, rgba(255, 240, 202, 0.2) 29.5%, rgba(255, 240, 202, 0)), linear-gradient(180deg, rgba(255, 244, 214, 0), #e2aed2 63.5%, rgba(246, 209, 255, 0)), linear-gradient(180deg, #ffe5e6, #e2aed2 51.5%, #ac88c6 76.5%), linear-gradient(180deg, rgba(254, 255, 243, 0), rgba(203, 199, 221, 0.07) 27%, rgba(116, 105, 184, 0.2) 72.5%);
+    background: radial-gradient(50% 50% at 50% 50%, #fff9e5, #fff9e5);
     height: 982px;
     overflow: hidden;
     text-align: center;
     font-size: 40px;
-    color: #9a6dba;
+    color: #ab8d8d;
     font-family: Outfit;
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    .macbook-pro-14-1-child {
+        width: 90%;
+        height: auto;
+    }
+    
+    .lets-see-how {
+        font-size: 5vw;
+    }
+
+    .macbook-pro-14-1-item {
+        width: 90%;
+        height: auto;
+    }
+
+    .squash-machine-simulator-container {
+        font-size: 8vw;
+    }
+
+    .vector-parent {
+        width: 90%;
+        font-size: 6vw;
+    }
+    
+    .start {
+        font-size: 6vw;
+    }
+
+    .macbook-pro-14-1-inner, .polygon-icon {
+        display: none; /* Hide if screen is too small */
+    }
+    
+    .ellipse-div {
+        width: 200px;
+        height: 200px;
+    }
+
+    .rectangle-div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .macbook-pro-14-1-child {
+        width: 90%;
+        height: auto;
+    }
+    
+    .lets-see-how {
+        font-size: 6vw;
+    }
+
+    .macbook-pro-14-1-item {
+        width: 90%;
+        height: auto;
+    }
+
+    .squash-machine-simulator-container {
+        font-size: 10vw;
+    }
+
+    .vector-parent {
+        width: 90%;
+        font-size: 8vw;
+    }
+    
+    .start {
+        font-size: 8vw;
+    }
+
+    .macbook-pro-14-1-inner, .polygon-icon {
+        display: none; /* Hide if screen is too small */
+    }
+    
+    .ellipse-div {
+        width: 150px;
+        height: 150px;
+    }
+
+    .rectangle-div {
+        width: 90%;
+    }
+}

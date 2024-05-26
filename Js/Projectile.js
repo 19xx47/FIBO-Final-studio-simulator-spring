@@ -7,7 +7,7 @@ class Projectile {
     setupProjectile(a, h, u) {
         // Convert angle from degrees to radians
         var angleRad = a * Math.PI / 180;
-        var initialHeight = (h * Math.sin(angleRad))-0.05; // Compute initial height based on angle
+        var initialHeight = (h * Math.sin(angleRad))-(0.05* Math.sin(angleRad)); // Compute initial height based on angle
 
         // Define projectile motion equations for the trajectory
         this.calculator.setExpressions([
@@ -23,7 +23,7 @@ class Projectile {
             // },
             {
                 id: 'y-gt0',
-                latex: `((${u}\\cos(${angleRad})t)*2, ${initialHeight}+${u}\\sin(${angleRad})t-\\frac{1}{2}${this.g}t^2) \\{${initialHeight}+${u}\\sin(${angleRad})t-\\frac{1}{2}${this.g}t^2 > 0\\}`,
+                latex: `((${u}\\cos(${angleRad})t), ${initialHeight}+${u}\\sin(${angleRad})t-\\frac{1}{2}${this.g}t^2) \\{${initialHeight}+${u}\\sin(${angleRad})t-\\frac{1}{2}${this.g}t^2 > 0\\}`,
                 color: '#00FF00'
             }
         ]);

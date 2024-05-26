@@ -1,0 +1,745 @@
+.macbook-pro-14-2-child {
+    position: absolute;
+    top: 624px;
+    left: 253px;
+    border-radius: 25px;
+    width: 1006px;
+    height: 300px;
+}
+.macbook-pro-14-2-item {
+    position: absolute;
+    top: 633px;
+    left: 292px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 86px;
+    height: 84px;
+}
+.macbook-pro-14-2-inner {
+    position: absolute;
+    top: 50px;
+    left: 253px;
+    border-radius: 16px;
+    width: 1006px;
+    height: 539px;
+}
+.rectangle-div {
+    position: absolute;
+    top: 50px;
+    left: 253px;
+    border-radius: 14px;
+    background-color: #d9d9d9;
+    width: 1006px;
+    height: 411px;
+}
+.rectangle-icon {
+    position: absolute;
+    top: 696px;
+    left: 731px;
+    border-radius: 30px;
+    width: 413px;
+    height: 199px;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 16px;
+    background-color: #ffda91;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 135px;
+    height: 44px;
+}
+.eject {
+    position: absolute;
+    top: 5px;
+    left: 37px;
+    font-weight: 500;
+    display: inline-block;
+    width: 53px;
+    height: 33px;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 830px;
+    left: 887px;
+    width: 117px;
+    height: 44px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.div {
+    position: absolute;
+    top: 774px;
+    left: 950px;
+    font-weight: 500;
+}
+.div1 {
+    position: absolute;
+    top: 718px;
+    left: 931px;
+    font-weight: 500;
+}
+.div2 {
+    position: absolute;
+    top: 876px;
+    left: 497px;
+    font-size: 25px;
+    font-weight: 500;
+    display: inline-block;
+    width: 93px;
+    height: 38px;
+}
+.mm {
+    position: absolute;
+    top: 6.4px;
+    left: 269px;
+    font-weight: 500;
+    display: inline-block;
+    width: 65px;
+    height: 46.8px;
+}
+
+.y {
+    width: 341.2px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Saira;
+    color: #000;
+    white-space: pre-wrap;
+    text-align: left;
+    display: inline-block;
+    height: 46.8px;
+}
+.z {
+    width: 341.2px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Saira;
+    color: #000;
+    white-space: pre-wrap;
+    text-align: left;
+    display: inline-block;
+    height: 46.8px;
+}
+
+
+.group-x0 {
+    position: absolute;
+    top: 775px;
+    left: 810px;
+    width: 341.2px;
+    height: 53.2px;
+    font-size: 24px;
+}
+.group-x-child {
+    position: absolute;
+    top: 33.34px;
+    left: 41.47px;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 221.7px;
+    height: 1px;
+}
+.group-x {
+    position: absolute;
+    top: 775px;
+    left: 810px;
+    width: 341.2px;
+    height: 53.2px;
+    font-size: 24px;
+}
+.mm1 {
+    position: absolute;
+    top: 7px;
+    left: 269px;
+    font-weight: 500;
+    display: inline-block;
+    width: 65px;
+    height: 46.8px;
+}
+.group-x1 {
+    position: absolute;
+    top: 723px;
+    left: 811px;
+    width: 341.2px;
+    height: 53.8px;
+    font-size: 24px;
+}
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 47px;
+    height: 46px;
+}
+.div3 {
+    position: absolute;
+    top: 2.63px;
+    left: 18px;
+    font-weight: 500;
+    display: inline-block;
+    width: 16px;
+    height: 40px;
+}
+.vector-parent {
+    position: absolute;
+    top: 756px;
+    left: 749px;
+    width: 47px;
+    height: 46px;
+}
+.lets-see-demo {
+    position: absolute;
+    top: 646px;
+    left: 848px;
+    font-weight: 500;
+    display: inline-block;
+    width: 190px;
+    height: 35px;
+}
+.div4 {
+    position: absolute;
+    top: 834px;
+    left: 405px;
+    font-weight: 500;
+}
+.div5 {
+    position: absolute;
+    top: 63px;
+    left: 796px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #be0303;
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+}
+.macbook-pro-14-2-child1 {
+    position: absolute;
+    top: 136px;
+    left: 796px;
+    border-radius: 8px;
+    background-color: #f5f4f4;
+    border: 1px solid rgba(129, 125, 125, 0.79);
+    box-sizing: border-box;
+    width: 395px;
+    height: 290px;
+}
+.mm2 {
+    position: absolute;
+    top: 173.65px;
+    left: 275.88px;
+    font-weight: 500;
+    display: inline-block;
+    width: 65px;
+    height: 46.8px;
+}
+.z1 {
+    position: absolute;
+    top: 174px;
+    left: 0px;
+    font-size: 30px;
+    font-weight: 500;
+    white-space: pre-wrap;
+    display: inline-block;
+    width: 341px;
+    height: 37px;
+}
+.group-z-child {
+    position: absolute;
+    top: 206.99px;
+    left: 49.26px;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 221.7px;
+    height: 1px;
+}
+.div6 {
+    position: absolute;
+    top: 0px;
+    left: 159px;
+    font-size: 26px;
+    font-weight: 500;
+    display: inline-block;
+    width: 21px;
+    height: 37px;
+}
+.group-z {
+    position: absolute;
+    top: 350px;
+    left: 822px;
+    width: 341px;
+    height: 53px;
+    font-size: 24px;
+}
+.mm3 {
+    position: absolute;
+    top: 0px;
+    left: 276.21px;
+    font-weight: 500;
+    display: inline-block;
+    width: 65px;
+    height: 46.8px;
+}
+.group-y-child {
+    position: absolute;
+    top: 33.34px;
+    left: 49.6px;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 221.7px;
+    height: 1px;
+}
+.coordinate-of-y {
+    position: absolute;
+    top: 5.03px;
+    left: 107.33px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #8f8f8f;
+    display: inline-block;
+    width: 113px;
+    height: 20px;
+}
+.group-y {
+    position: absolute;
+    top: 257.97px;
+    left: 821.67px;
+    width: 341.2px;
+    height: 46.8px;
+    font-size: 24px;
+}
+.span {
+    font-size: 24px;
+    white-space: pre-wrap;
+}
+.x {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    display: inline-block;
+    width: 341.2px;
+    height: 46.8px;
+    font-size: 30px;
+}
+.coordinate-of-z {
+    position: absolute;
+    top: 171.71px;
+    left: 107.33px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #8f8f8f;
+    display: inline-block;
+    width: 140.8px;
+    height: 29.5px;
+}
+.group-x2 {
+    position: absolute;
+    top: 174.29px;
+    left: 821.67px;
+    width: 341.2px;
+    height: 201.2px;
+    font-size: 24px;
+}
+.please-fill-in {
+    position: absolute;
+    top: 432px;
+    left: 1019px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #be0303;
+    display: inline-block;
+    width: 180px;
+    height: 24px;
+}
+.position-of-machine {
+    position: absolute;
+    top: 70px;
+    left: 814px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #171414;
+    display: inline-block;
+    width: 373px;
+    height: 47px;
+}
+.group-inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 16px;
+    background-color: #ffa7a7;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 265.4px;
+    height: 71.4px;
+}
+.restart {
+    position: absolute;
+    top: 17.06px;
+    left: 84.37px;
+    font-weight: 500;
+    display: inline-block;
+    width: 96px;
+    height: 37px;
+}
+.rectangle-group {
+    position: absolute;
+    top: 481.94px;
+    left: 928.63px;
+    width: 265.4px;
+    height: 71.4px;
+    cursor: pointer;
+}
+.group-child1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 16px;
+    background-color: rgb(203, 224, 255);
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 265.4px;
+    height: 71.4px;
+}
+.Trajectory {
+    position: absolute;
+    top: 18.06px;
+    left: 75.24px;
+    font-weight: 500;
+    display: inline-block;
+    width: 123px;
+    height: 42px;
+}
+.rectangle-container {
+    position: absolute;
+    top: 481.94px;
+    left: 630.76px;
+    width: 265.4px;
+    height: 71.4px;
+    cursor: pointer;
+}
+.group-child2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 16px;
+    background-color: #c8ffd4;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 265.4px;
+    height: 71.4px;
+}
+.calculate {
+    position: absolute;
+    top: 17.06px;
+    left: 76.3px;
+    font-weight: 500;
+    display: inline-block;
+    width: 113px;
+    height: 35px;
+}
+.group-div {
+    position: absolute;
+    top: 481.94px;
+    left: 320.7px;
+    width: 265.4px;
+    height: 71.4px;
+    cursor: pointer;
+}
+.macbook-pro-14-2-child2 {
+    position: absolute;
+    top: 136px;
+    left: 320px;
+    border-radius: 8px;
+    width: 394px;
+    height: 290px;
+}
+.coordinate-of-target {
+    position: absolute;
+    top: 8.03px;
+    left: 81.33px;
+    font-size: 20px;
+    font-weight: 500;
+    /* transform: translate(-60%, -50%); */
+    color: #000000;
+    display: inline-block;
+    width: 186.8px;
+    height: 29.5px;
+}
+
+.div7 {
+    position: absolute;
+    top: 63px;
+    left: 296px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #be0303;
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+}
+
+.coordinate-of-target1 {
+    position: absolute;
+    top: 8.03px;
+    left: 81.33px;
+    font-size: 20px;
+    font-weight: 500;
+    /* transform: translate(-60%, -50%); */
+    color: #000000;
+    display: inline-block;
+    width: 186.8px;
+    height: 29.5px;
+}
+
+.group-x3 {
+    position: absolute;
+    top: 261px;
+    left: 350px;
+    width: 341.2px;
+    height: 53.2px;
+    font-size: 24px;
+}
+
+.group-x4 {
+    position: absolute;
+    top: 171px;
+    left: 350px;
+    width: 341.2px;
+    height: 53.8px;
+    font-size: 24px;
+}
+
+
+.target-in-z {
+    position: absolute;
+    top: 70px;
+    left: 320px;
+    font-size: 36px;
+    font-weight: 600;
+    display: inline-block;
+    width: 389px;
+    height: 47px;
+}
+.polygon-icon {
+    position: absolute;
+    top: 625px;
+    left: 296px;
+    width: 381px;
+    height: 300px;
+}
+.ellipse-div {
+    position: absolute;
+    top: 781px;
+    left: 523px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 68px;
+    height: 68px;
+}
+.macbook-pro-14-2-child3 {
+    position: absolute;
+    top: 799px;
+    left: 379px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 68px;
+    height: 68px;
+}
+.macbook-pro-14-2-child4 {
+    position: absolute;
+    top: 709px;
+    left: 463px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 68px;
+    height: 68px;
+}
+.div8 {
+    position: absolute;
+    top: 723px;
+    left: 489px;
+    font-weight: 500;
+    display: inline-block;
+    width: 16px;
+    height: 40px;
+}
+.div9 {
+    position: absolute;
+    top: 795px;
+    left: 550px;
+    font-weight: 500;
+    display: inline-block;
+    width: 16px;
+    height: 40px;
+}
+.div10 {
+    position: absolute;
+    top: 814px;
+    left: 405px;
+    font-weight: 500;
+    display: inline-block;
+    width: 16px;
+    height: 40px;
+}
+.ellipse-icon {
+    position: absolute;
+    top: 864px;
+    left: 477px;
+    width: 20px;
+    height: 20px;
+}
+.macbook-pro-14-2-child5 {
+    position: absolute;
+    top: 628.5px;
+    left: 485.5px;
+    border-right: 1px dashed #000;
+    box-sizing: border-box;
+    width: 1px;
+    height: 267px;
+}
+.image-2-icon {
+    position: absolute;
+    top: 650px;
+    left: 305px;
+    width: 60px;
+    height: 51px;
+    object-fit: cover;
+}
+.macbook-pro-14-2 {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(180deg, rgba(255, 240, 202, 0.2) 29.5%, rgba(255, 240, 202, 0)), linear-gradient(180deg, rgba(255, 244, 214, 0), #e2aed2 63.5%, rgba(246, 209, 255, 0)), linear-gradient(180deg, #ffe5e6, #e2aed2 51.5%, #ac88c6 76.5%), linear-gradient(180deg, rgba(254, 255, 243, 0), rgba(203, 199, 221, 0.07) 27%, rgba(116, 105, 184, 0.2) 72.5%);
+    height: 982px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 26px;
+    color: #000;
+    font-family: Saira;
+}
+
+.animate {
+    /* Define your animation styles here */
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.coordinate-of-target2 {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Saira;
+    color: #040000;
+    text-align: center; /* Center-align the text */
+    display: inline-block;
+}
+
+.coordinate-of-target3 {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Saira;
+    color: #040000;
+    text-align: center; /* Center-align the text */
+    display: inline-block;
+}
+
+.coordinate-of-targetx {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-60%, -50%);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Saira;
+    color: #040000;
+    text-align: center; /* Center-align the text */
+    display: inline-block;
+}
+
+.coordinate-of-targety {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-60%, -50%);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Saira;
+    color: #040000;
+    text-align: center; /* Center-align the text */
+    display: inline-block;
+}
+
+.coordinate-of-targetz {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-60%, -50%);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Saira;
+    color: #040000;
+    text-align: center; /* Center-align the text */
+    display: inline-block;
+}
+
+.x1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    display: inline-block;
+    width: 341.2px;
+    height: 46.8px;
+    font-size: 30px;
+}
+.z1 {
+    width: 341.2px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Saira;
+    color: #000;
+    white-space: pre-wrap;
+    text-align: left;
+    display: inline-block;
+    height: 46.8px;
+}

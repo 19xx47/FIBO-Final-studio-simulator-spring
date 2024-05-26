@@ -886,6 +886,23 @@
 }
 
 
+.ellipse-div {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    background-color: #ab8d8d;
+    height: 70px;
+}
+
+.arrow-icon {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 0px;
+    object-fit: contain;
+}
+
 
 #calculator {
     position: absolute;

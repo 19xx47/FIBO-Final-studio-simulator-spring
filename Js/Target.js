@@ -41,14 +41,16 @@ class Target {
         });
     }
 
-    drawTargetsAndTriangles() {
+    drawTargetsAndTriangles(z_target) {
         const points = [
-            { x: 2, y: 0.880 },
-            { x: 2, y: 0.915 },
-            { x: 2, y: 1.015 }
+            { x: 2, y: z_target}
+            // { x: 2, y: 0.880 },
+            // { x: 2, y: 0.915 },
+            // { x: 2, y: 1.015 }
         ];
         points.forEach(point => {
-            this.addPoint(point.x, point.y, 9, '#FF0000'); // Large size, Red color
+            // this.addPoint(point.x, point.y_tar, 12, '#333');
+            this.addPoint(point.x, point.y, 20, '#FF0000'); // Large size, Red color
             this.drawTriangle(point.x, point.y, 1); // Triangle with side 2 around each point
         });
     }

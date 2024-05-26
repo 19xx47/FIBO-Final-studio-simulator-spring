@@ -1,42 +1,301 @@
-body {
+        body {
             background-color: black;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 80vh;
             margin: 0;
             color: rgb(0, 0, 0);
         }
+
         #plot {
-            width: 90%;
-            height: 70%;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 70vh;
             margin-bottom: 20px;
+
+            margin: 0;
         }
+
         table {
             width: 90%;
             margin-top: 20px;
             color: rgb(255, 255, 255);
-            /* border-collapse: collapse; */
             font-family: Saira;
-            /* text-align: center;
-            display: inline-block; */
         }
+
         th, td {
             padding: 8px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
+
         th {
             background-color: #333;
         }
+
         .row {
             display: flex;
         }
+
         .row th, .row td {
             flex: 1;
             text-align: center;
         }
+
         .row:nth-child(even) {
-            background-color: #555; /* Alternate row color */
+            background-color: #555;
         }
+
+       
+        .rectangle-icon {
+            width: 100%;
+            position: relative;
+            background-color: #ebe5ff;
+            top: 55px;
+            height: 250px;
+            overflow: hidden;
+            text-align: left;
+            font-size: 35px;
+            color: #fff;
+            font-family: Outfit;
+      }
+      
+      
+
+        .group-icon {
+            position: absolute;
+            top: 70px;
+            left: 1300px;
+            width: 70px;
+            height: 70px;
+            }
+            .d-graph {
+                position: absolute;
+                top: 354px;
+                left: 690px;
+                font-weight: 500;
+          }
+          .macbook-pro-14-4-child {
+                position: absolute;
+                top: 37px;
+                left: 43px;
+                width: 70px;
+                height: 70px;
+          }
+          .macbook-pro-14-4-item {
+                position: absolute;
+                top: 37px;
+                left: 1391px;
+                width: 70px;
+                height: 70px;
+          }
+          .image-3-icon {
+                position: absolute;
+                top: -54px;
+                left: 178px;
+                width: 1515px;
+                height: 582px;
+                object-fit: cover;
+          }
+          .group-child1 {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 1512px;
+                height: 248.5px;
+          }
+          .group-item {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                border-radius: 13px;
+                background: linear-gradient(90deg, #ee6983, #bd4b4b);
+                width: 150px;
+                height: 49px;
+          }
+          .target-of-x {
+                position: absolute;
+                top: 10px;
+                left: 15px;
+                font-weight: 500;
+          }
+          .rectangle-parent {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 150px;
+                height: 49px;
+          }
+          .value {
+                position: absolute;
+                top: 65px;
+                left: 36px;
+                font-size: 32px;
+                font-weight: 500;
+                color: #ab8d8d;
+                text-align: center;
+          }
+          .group-parent {
+                position: absolute;
+                top: 108.5px;
+                left: 24px;
+                width: 150px;
+                height: 105px;
+          }
+          .group-container {
+                position: absolute;
+                top: 108.5px;
+                left: 243px;
+                width: 150px;
+                height: 105px;
+          }
+          .position-x {
+                position: absolute;
+                top: 10px;
+                left: 22px;
+                font-weight: 500;
+          }
+          .group-div {
+                position: absolute;
+                top: 108.5px;
+                left: 462px;
+                width: 150px;
+                height: 105px;
+          }
+          .group-parent1 {
+                position: absolute;
+                top: 108.5px;
+                left: 681px;
+                width: 150px;
+                height: 105px;
+          }
+          .group-parent2 {
+                position: absolute;
+                top: 108.5px;
+                left: 900px;
+                width: 150px;
+                height: 105px;
+          }
+          .angle {
+                position: absolute;
+                top: 10px;
+                left: 44px;
+                font-weight: 500;
+          }
+          .group-parent3 {
+                position: absolute;
+                top: 108.5px;
+                left: 1119px;
+                width: 150px;
+                height: 105px;
+          }
+          .velocity {
+                position: absolute;
+                top: 10px;
+                left: 32px;
+                font-weight: 500;
+          }
+          .group-parent4 {
+                position: absolute;
+                top: 108.5px;
+                left: 1338px;
+                width: 150px;
+                height: 105px;
+          }
+          .group-child5 {
+                position: absolute;
+                top: 13.5px;
+                left: calc(50% - 132px);
+                border-radius: 20px;
+                background-color: #fff9e5;
+                width: 261px;
+                height: 73px;
+          }
+          .title {
+                position: absolute;
+                top: 18.5px;
+                left: 660px;
+                font-size: 50px;
+                font-weight: 500;
+                font-family: Saira;
+                color: #302020;
+          }
+          .group-icon2 {
+                position: absolute;
+                top: 155.5px;
+                left: 201px;
+                width: 14px;
+                height: 51px;
+          }
+          .group-child6 {
+                position: absolute;
+                top: 155.5px;
+                left: 420px;
+                width: 14px;
+                height: 51px;
+          }
+          .line-icon {
+                position: absolute;
+                top: 179.5px;
+                left: 646px;
+                width: 0px;
+                height: 27px;
+                object-fit: contain;
+          }
+          .group-child7 {
+                position: absolute;
+                top: 155.5px;
+                left: 639px;
+                width: 14px;
+                height: 51px;
+          }
+          .group-child8 {
+                position: absolute;
+                top: 155.5px;
+                left: 858px;
+                width: 14px;
+                height: 51px;
+          }
+          .group-child9 {
+                position: absolute;
+                top: 155.5px;
+                left: 1077px;
+                width: 14px;
+                height: 51px;
+          }
+          .group-child10 {
+                position: absolute;
+                top: 155.5px;
+                left: 1297px;
+                width: 14px;
+                height: 51px;
+          }
+          .vector-parent {
+                position: absolute;
+                top: 680px;
+                left: 0px;
+                width: 1512px;
+                height: 248.5px;
+                font-size: 24px;
+                color: #fff9e5;
+          }
+          .macbook-pro-14-4 {
+                width: 100%;
+                position: relative;
+                background-color: #fff9e5;
+                height: 982px;
+                overflow: hidden;
+                text-align: left;
+                font-size: 35px;
+                color: #fff;
+                font-family: Outfit;
+          }
+          
+          
+
+            
+      
+      

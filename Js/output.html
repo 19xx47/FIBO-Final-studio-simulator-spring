@@ -187,16 +187,16 @@
                 const posX = document.querySelector('.coordinate-of-targetx').innerText.trim();
                 const posY = document.querySelector('.coordinate-of-targety').innerText.trim();
                 const posZ = document.querySelector('.coordinate-of-targetz').innerText.trim();
-                const spring = document.querySelector('.coordinate-of-targetk').innerText.trim();
+                const spring_constant = document.querySelector('.coordinate-of-targetk').innerText.trim();
                 const mass = document.querySelector('.coordinate-of-targetm').innerText.trim();
                 const displacement =document.querySelector('.coordinate-of-targetkx').innerText.trim();
 
                 globalThis.angle = 0;
                 globalThis.velocity = 0;
-                globalThis.spring = 750;
+                globalThis.spring_constant = 750;
                 globalThis.mass = 0.3;
                 globalThis.displacement = 0.1;
-                console.log('spring');
+                console.log('spring_constant');
                 console.log('targetX');
                 console.log(targetX);
                 console.log('targetZ');
@@ -219,50 +219,12 @@
                             
 
                 // Call the async function to fetch data
-                fetchData(targetX, targetZ, posX, posY, posZ, angle, velocity, spring, mass);           
+                fetchData(targetX, targetZ, posX, posY, posZ, angle, velocity,mass, spring_constant, displacement);           
          
                 // fetchData_docs(targetX, targetZ, posX, posY, posZ);
             });
         }
-        async function fetchData_docs(targetX, targetZ, posX, posY, posZ) {
-
-            try {
-                data = {
-                    targetX: targetX,
-                    targetZ: targetZ,
-                    posX: posX,
-                    posY: posY,
-                    posZ: posZ,
-                    angle: angle,
-                    velocity: velocity,
-                    spring: spring,
-                    mass: mass
-                };
-                // Fetch angle and velocity from FastAPI
-                const googleResponse = await fetch('https://script.google.com/macros/s/AKfycbwd4jtyCLPXNrqrF60leuUMzhovXlpPbY4-T7-jFDqj2LrNIyLVmsAXOWx1e27uCGWTkw/exec', { // Replace with your Google Apps Script Web App URL
-                    
-                    mode: 'no-cors',
-                    credentials: 'include',
-
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                });
-
-                if (!googleResponse.ok) {
-                    throw new Error(`Error fetching angle and velocity: ${googleResponse.statusText}`);
-                };
-            }
-                
-
-                // Send data to Google Apps Script Web App
-                
-            catch (error) {
-                console.error('Failed to save data:', error);
-            }
-        }
+    
         async function fetchOptimalAngle() {
             try {
                 const responses = await fetch('/get');
@@ -278,9 +240,28 @@
             }
         }
 
-        async function fetchData(targetX, targetZ, posX, posY, posZ, angle, velocity, spring, mass) {
+        async function fetchData(targetX, targetZ, posX, posY, posZ, angle, velocity, mass, spring_constant, displacement) {
 
             try {
+                if (spring_constant != null && mass > 0 && displacement != null){
+                    let k = spring_constant;
+                    let m = mass;
+                    let x = displacement;
+                    console.log('k:', k);
+                    const calculator = new VelocityCalculator(m, k, x);
+                    const velocity = calculator.calculateVelocity();
+                    console.log(`Velocity: ${velocity.toFixed(2)} m/s`);
+                    u = velocity.toFixed(2);
+
+                    
+                }
+                
+                else{
+                    u = 6.8;
+                    mass = 0.4;
+                    spring_constant = 780;
+                    displacement  = 0.15;
+                }
                 
                 // Fetch angle and velocity from FastAPI
                 const response = await fetch('http://localhost:8000/data', { // Replace with your FastAPI URL
@@ -294,9 +275,13 @@
                     body: JSON.stringify({
                     targetX: parseFloat(targetX),
                     targetZ: parseFloat(targetZ),
-                    posX: parseFloat(posX),
-                    posY: parseFloat(posY),
-                    posZ: parseFloat(posZ)
+                    posX: parseFloat(targetX -posX),
+                    posY: parseFloat(posY-posY),
+                    posZ: parseFloat(targetZ-posZ-(targetZ-posZ)),
+                    velocity: parseFloat(u),
+                    mass: parseFloat(mass),
+                    spring_constant: parseFloat(spring_constant),
+                    displacement: parseFloat(displacement)
                 })
                 
                 });
@@ -316,8 +301,8 @@
         
       
                     
-                if (spring != null && mass > 0 && displacement != null){
-                    let k = spring;
+                if (spring_constant != null && mass > 0 && displacement != null){
+                    let k = spring_constant;
                     let m = mass;
                     let x = displacement;
                     console.log('k:', k);
@@ -329,13 +314,13 @@
                     
                 }
                 
-                if (spring == null){
-                    u = 6;
+                if (spring_constant == null){
+                    u = 6.5;
                 }
                 u = 6.5;
                 
                 // angle = result.angle;
-                let h = 0.4;
+                let h = 0.6;
                 // if (parseFloat(posZ) > 0) {
                 //     h = h+ parseFloat(posZ);
                 //     console.log('h:', h);
@@ -345,18 +330,57 @@
                 // obstacle.createObstacle(1, 0, 0.2, 0.6);
                 // target.drawTargetsAndTriangles();}
                 // else {
-                h = 0.4;
+                h = 0.6;
+                let targetZ_tar = parseFloat(targetZ/1000);
+                console.log('targetZ_tar:', targetZ_tar);
+                target.drawTargetsAndTriangles(targetZ_tar);
+
                 projectile.setupProjectile(optimalAngle, h, u);
                 shape.createShapes(2, 0, 0.2, 1.5);
                 obstacle.createObstacle(1, 0, 0.2, 0.6);
-                target.drawTargetsAndTriangles();
-                // }
-                // console.log('fetching data');
-				// console.log(response);
-             
-                if (!response.ok) {
-                    throw new Error(`Error fetching angle and velocity: ${response.statusText}`);
-                }
+                
+                
+
+                data = {
+                    targetX: targetX,
+                    targetZ: targetZ,
+                    posX: targetX -posX,
+                    posY: posY-posY,
+                    posZ: targetZ-posZ,
+                    angle: angle,
+                    velocity: u,
+                    mass: mass,
+                    spring_constant: spring_constant,
+                    displacement: displacement
+                };
+                // Fetch angle and velocity from FastAPI
+                // const data = {
+                //     targetX: targetX,
+                //     targetZ: targetZ,
+                //     posX: posX,
+                //     posY: posY,
+                //     posZ: posZ,
+                //     angle: angle,
+                //     velocity: u,
+                //     mass: mass,
+                //     spring_constant: spring_constant,
+                //     displacement: displacement
+                //     };
+
+                    // const googleResponse = await fetch('https://script.google.com/macros/s/AKfycbysUIYy4EQCBh_RghSlzzOToHvyhIPP1A0CBXZuSYZw97FYZ39JW13HPSuxs42akNkpiw/exec', {
+                    // mode: 'cors',
+                    // credentials: 'include',
+                    // method: 'POST',
+                    // headers: {
+                    //     'Content-Type': 'application/json'
+                    // },
+                    // body: JSON.stringify(data)
+                    // });
+
+                    // if (!googleResponse.ok) {
+                    // throw new Error(`Error fetching angle and velocity: ${googleResponse.statusText}`);
+                    // }
+
             } catch (error) {
                 console.error('Failed to save data:', error);
             }
@@ -365,7 +389,7 @@
         var groupContainer3 = document.getElementById("groupContainer3");
         if (groupContainer3) {
             groupContainer3.addEventListener("click", function (e) {
-            var spansToRemove = document.querySelectorAll('.group-z1 span, .group-x1 span, .group-x2 span, .group-y span, .group-z span');
+            var spansToRemove = document.querySelectorAll('.group-z1 span, .group-x1 span, .group-x2 span, .group-y span, .group-z span, .group-k span, .group-kx span, .group-m span');
                     spansToRemove.forEach(function (span) {
                         span.innerText = "";
                     });

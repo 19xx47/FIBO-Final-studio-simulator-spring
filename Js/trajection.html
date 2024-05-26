@@ -9,22 +9,77 @@
 </head>
 <body>
     <div id="plot"></div>
-    <table>
-        <thead>
-            <tr>
-                <th>Target_of_X</th>
-                <th>Target_of_Z</th>
-                <th>Position_x</th>
-                <th>Position_Y</th>
-                <th>Position_Z</th>
-                <th>Angle</th>
-                <th>Velocity</th>
-            </tr>
-        </thead>
-        <tbody id="latest-row">
-        </tbody>
-    </table>
+    <img class="group-icon" alt="" src="./images/Group 16.svg" id="groupContainer">
+    <div class="vector-parent">
+        <div class="rectangle-icon"></div>
+        <div class="group-parent">
+            <div class="rectangle-parent">
+                <div class="group-item"></div>
+                <div class="target-of-x">Target of X</div>
+                <div class="value">Value</div>
+            </div>
+        </div>
+        <div class="group-container">
+            <div class="rectangle-parent">
+                <div class="group-item"></div>
+                <div class="target-of-x">Target of Z</div>
+                <div class="value">Value</div>
+            </div>
+        </div>
+        <div class="group-div">
+            <div class="rectangle-parent">
+                <div class="group-item"></div>
+                <div class="position-x">Position X</div>
+                <div class="value">Value</div>
+            </div>
+        </div>
+        <div class="group-parent1">
+            <div class="rectangle-parent">
+                <div class="group-item"></div>
+                <div class="position-x">Position Y</div>
+                <div class="value">Value</div>
+            </div>
+        </div>
+        <div class="group-parent2">
+            <div class="rectangle-parent">
+                <div class="group-item"></div>
+                <div class="position-x">Position Z</div>
+                <div class="value">Value</div>
+            </div>
+        </div>
+        <div class="group-parent3">
+            <div class="rectangle-parent">
+                <div class="group-item"></div>
+                <div class="angle">Angle</div>
+                <div class="value">Value</div>
+            </div>
+        </div>
+        <div class="group-parent4">
+            <div class="rectangle-parent">
+                <div class="group-item"></div>
+                <div class="velocity">Velocity</div>
+                <div class="value">Value</div>
+            </div>
+        </div>
+        <div class="group-child5"></div>
+        <div class="title">Summary</div>
+        <img class="group-icon2" alt="" src="./images/Group 32.svg">
+        <img class="group-child6" alt="" src="./images/Group 33.svg">
+        <img class="line-icon" alt="" src="./images/Line 5.svg">
+        <img class="group-child7" alt="" src="./images/Group 34.svg">
+        <img class="group-child8" alt="" src="./images/Group 35.svg">
+        <img class="group-child9" alt="" src="./images/Group 36.svg">
+        <img class="group-child10" alt="" src="./images/Group 37.svg">
+    </div>
+   
     <script>
+        var groupContainer = document.getElementById("groupContainer");
+        if (groupContainer) {
+            groupContainer.addEventListener("click", function (e) {
+                window.location.href = "./output.html";
+            });
+        }
+
         async function plotTrajectory() {
             try {
                 const response = await fetch('http://localhost:8000/data');
@@ -34,7 +89,7 @@
                     const x = data.data.x;
                     const y = data.data.y;
                     const z = data.data.z;
-                    const vx = data.data.vx; // assuming velocity components are available
+                    const vx = data.data.vx;
                     const vy = data.data.vy;
                     const vz = data.data.vz;
                     const time = data.data.time;
@@ -87,10 +142,11 @@
                         },
                         paper_bgcolor: 'black',
                         font: {color: 'white'},
-                        title: 'Squash Projectile Motion'
+                        title: 'Squash Projectile Motion',
+                        autosize: true
                     };
 
-                    Plotly.newPlot('plot', [traceCyan, traceRed], layout);
+                    Plotly.newPlot('plot', [traceCyan, traceRed], layout, {responsive: true});
                 }
             } catch (error) {
                 console.error('Error:', error);
@@ -104,22 +160,31 @@
                 const response = await fetch('http://localhost:8000/table');
                 const latestRow = await response.json();
                 
-                const tableBody = document.getElementById('latest-row');
-
-                // Clear existing rows
-                tableBody.innerHTML = '';
-
-                // Populate table with latest row data
-                const row = '<tr>' +
-                                '<td>' + latestRow.targetX + '</td>' +
-                                '<td>' + latestRow.targetZ + '</td>' +
-                                '<td>' + latestRow.posX + '</td>' +
-                                '<td>' + latestRow.posY + '</td>' +
-                                '<td>' + latestRow.posZ + '</td>' +
-                                '<td>' + latestRow.angle + '</td>' +
-                                '<td>' + latestRow.velocity + '</td>' +
-                            '</tr>';
-                tableBody.innerHTML += row;
+                document.querySelectorAll('.target-of-x').forEach((element, index) => {
+                    if (index === 0) {
+                        element.nextElementSibling.textContent = latestRow.targetX;
+                    } else {
+                        element.nextElementSibling.textContent = latestRow.targetZ;
+                    }
+                    element.nextElementSibling.style.color = '#ab8d8d';
+                });
+                
+                document.querySelectorAll('.position-x').forEach((element, index) => {
+                    if (index === 0) {
+                        element.nextElementSibling.textContent = latestRow.posX;
+                    } else if (index === 1) {
+                        element.nextElementSibling.textContent = latestRow.posY;
+                    } else {
+                        element.nextElementSibling.textContent = latestRow.posZ;
+                    }
+                    element.nextElementSibling.style.color = '#ab8d8d';
+                });
+                
+                document.querySelector('.angle').nextElementSibling.textContent = latestRow.angle;
+                document.querySelector('.angle').nextElementSibling.style.color = '#ab8d8d';
+                
+                document.querySelector('.velocity').nextElementSibling.textContent = latestRow.velocity;
+                document.querySelector('.velocity').nextElementSibling.style.color = '#ab8d8d';
                 
             } catch (error) {
                 console.error('Error:', error);

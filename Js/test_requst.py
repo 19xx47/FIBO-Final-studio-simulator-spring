@@ -38,9 +38,9 @@ def pull_sheet_data(SCOPES,SPREADSHEET_ID,DATA_TO_PULL):
         print("COMPLETE: Data copied")
         return data
     
-# https://docs.google.com/spreadsheets/d/15RY2X_TGgvw37gEl6GPtc7Eg-O-DoHT06UTzMWQjdDohhh/edit#gid=1534551116
+# https://docs.google.com/spreadsheets/d/15RY2X_TGgvw37gEl6GPtc7Eg-O-DoHT06UTzMWQjdDo/edit#gid=1534551116
 # SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-# SPREADSHEET_ID = '15RY2X_TGgvw37gEl6GPtc7Eg-O-DoHT06UTzMWQjdDohhh'
+# SPREADSHEET_ID = '15RY2X_TGgvw37gEl6GPtc7Eg-O-DoHT06UTzMWQjdDo'
 # DATA_TO_PULL = 'Data'
 # data = pull_sheet_data(SCOPES,SPREADSHEET_ID,DATA_TO_PULL)
 # df = pd.DataFrame(data[1:], columns=data[0])
