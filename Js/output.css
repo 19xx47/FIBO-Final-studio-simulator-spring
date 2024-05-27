@@ -3,18 +3,17 @@
     top: 43px;
     left: 0px;
     border-radius: 16px;
-    background-color: rgba(203, 199, 221, 0);
+    background-color: rgba(234, 233, 240, 0);
     width: 413px;
     height: 896px;
 }
 .macbook-pro-14-output-item {
     position: absolute;
-    top: 35px;
-    left: 28px;
+   
     border-radius: 14px;
     background-color: #d9d9d9;
-    width: 400px;
-    height: 690px;
+    width: 450px;
+    height: 1200px;
 }
 .macbook-pro-14-output-inner {
     position: absolute;
@@ -412,13 +411,13 @@
     top: 24px;
     left: 1150px;
     border-radius: 16px 0px 0px 16px;
-    background-color: rgba(82, 82, 82, 0.7);
+    background-color: rgba(255, 255, 255, 0.877);
     width: 355px;
     height: 406px;
 }
 .angle-of-machine {
     position: absolute;
-    color: #cdcdcd;
+    color: #030303;
     top: 275px;
     left: 1200px;
     font-size: 14px;
@@ -529,7 +528,7 @@
 }
 .position-of-machine1 {
     position: absolute;
-    color: #cdcdcd;
+    color: #000000;
     top: 89px;
     left: 1200px;
     font-size: 14px;
@@ -885,23 +884,6 @@
     font-family: Saira;
 }
 
-
-.ellipse-div {
-    width: 100%;
-    position: relative;
-    border-radius: 50%;
-    background-color: #ab8d8d;
-    height: 70px;
-}
-
-.arrow-icon {
-    width: 100%;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    height: 0px;
-    object-fit: contain;
-}
 
 
 #calculator {
