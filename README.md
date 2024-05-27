@@ -1,7 +1,4 @@
-# Creating the README file with the provided content
 
-readme_content = """
-# Web Application Overview
 
 ## Introduction
 
