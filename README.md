@@ -82,7 +82,7 @@ This process ensures that the most optimal angle is selected based on comprehens
 
 The following UML diagram provides a detailed overview of the classes and their relationships within the application:
 
-![UML Diagram](Brainstorming and ideation.jpeg)
+![UML Diagram](./Brainstorming and ideation.jpeg)
 
 ## Conclusion
 
