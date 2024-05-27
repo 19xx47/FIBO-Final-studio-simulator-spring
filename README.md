@@ -86,11 +86,8 @@ The following UML diagram provides a detailed overview of the classes and their 
 
 ## Conclusion
 
-This README provides a high-level overview of the web application, including its front end, API endpoints, and back end. For more detailed information on the implementation and usage, please refer to the respective sections in the documentation.
+How you enjoy with Simulator !
 """
-
-with open("/mnt/data/README.md", "w") as file:
-    file.write(readme_content)
 
 
 ## How to run api go to path .path/studio/Js/
