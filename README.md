@@ -64,11 +64,25 @@ The backend is responsible for processing the data and performing the necessary 
 
 Google Sheets is used to store and manage the data for the application. It allows for easy access and manipulation of the data required for calculations and visualizations.
 
+Grid Search Algorithm
+The application uses a Grid Search algorithm to determine the optimal angle for the given machine and target positions.
+
+What is Grid Search?
+Grid Search is an exhaustive search algorithm used to find the optimal parameters for a model. It works by systematically working through multiple combinations of parameter values, cross-validating as it goes to determine which combination provides the best results.
+
+How Grid Search is Applied
+In this application, the Grid Search algorithm iterates over a specified range of angles to find the best fit angle that meets the desired criteria. The steps are as follows:
+
+Define the Parameter Grid: Specify the range of angles to be tested.
+Iterate through Parameters: For each angle, perform the necessary calculations to determine its suitability.
+Evaluate Results: Assess each angle based on predefined metrics to determine its effectiveness.
+Select Best Angle: Choose the angle that provides the best results according to the evaluation metrics.
+This process ensures that the most optimal angle is selected based on comprehensive evaluation across a range of possibilities.
 ## UML Diagram
 
 The following UML diagram provides a detailed overview of the classes and their relationships within the application:
 
-![UML Diagram](./path_to_uploaded_image/Brainstorming_and_ideation.jpeg)
+![UML Diagram](./Brainstorming_and_ideation.jpeg)
 
 ## Conclusion
 
